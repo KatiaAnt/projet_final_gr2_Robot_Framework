@@ -12,7 +12,7 @@ Suite Teardown   Close All Browsers
 *** Keywords ***
 Open the browser and access Authentication page
     Access To URL    ${URL}    ${browser}
-    Access To Authentification Page    ${authpage_button_locator}
+    Access To Authentication Page    ${authpage_button_locator}
 
 *** Test Cases ***
 

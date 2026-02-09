@@ -11,7 +11,7 @@ Access To URL
     Maximize Browser Window
     Set Selenium Implicit Wait    10s
 
-Access To Authentification Page
+Access To Authentication Page
     [Arguments]    ${authpage_button_locator}
     Click Element    ${authpage_button_locator}
 
