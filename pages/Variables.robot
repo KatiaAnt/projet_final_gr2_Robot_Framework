@@ -6,7 +6,7 @@ ${browser}    chrome
 
 # --- User Test Data ---
 # Increment this value to generate unique user data for each test run
-${iteration}    8
+${iteration}    11
 
 # Dictionary to store new user information
 &{NEW_USER_CREDINTIALS}
@@ -35,6 +35,8 @@ ${iteration}    8
 ${authpage_button_locator}    xpath://*[name()='path' and contains(@d,'M7.5,0C3.4')]
 ${Register_button_locator}   xpath://button[@name='register']
 ${Login_button_locator}   xpath://button[@name='login']
+${welcome_message_locator}    xpath://p[contains(text(),'Hello')]
 
 # --- Expected Results & Messages ---
 ${registration_error_message}    An account is already registered with your email address.
+${welcome_message}    Bonjour heureux de vous retrouver ! N’hésitez pas à regarder nos nouveautés, il y en a pour tous les gouts.

@@ -16,8 +16,8 @@ Register new user successfully
     Access To Authnetification Page    ${authpage_button_locator}
     # Passing user data and locators to the registration keyword
     Enter User Credintials To Register    ${NEW_USER_CREDINTIALS}    ${CREDINTIALS_LOCATORS}    ${Register_button_locator}        
-    # Check if the correct username appears in the dashboard
-    Verify User Is Logged In    ${NEW_USER_CREDINTIALS}[username]
+    # Check if the correct username appears in the dashboard and the mandatory welcome message defined in User Story 2
+    Verify User Is Logged In and Welcomed    ${NEW_USER_CREDINTIALS}[username]    ${welcome_message}    ${welcome_message_locator}
 
 Register existing user unsuccesfully
     [Documentation]    Verify that registration fails when using an email already in the database.
@@ -34,8 +34,8 @@ Login existing user successfully
     Access To Authnetification Page    ${authpage_button_locator}
     # Performing login action
     Enter User Credintials To Login   ${EXISTING_USER_CREDINTIALS}    ${CREDINTIALS_LOCATORS}    ${Login_button_locator} 
-    # Check if the user is redirected to the account dashboard
-    Verify User Is Logged In    ${EXISTING_USER_CREDINTIALS}[username]
+    # Check if the user is redirected to the account dashboard and the mandatory welcome message defined in User Story 2.
+    Verify User Is Logged In and Welcomed    ${NEW_USER_CREDINTIALS}[username]    ${welcome_message}    ${welcome_message_locator}
     
     
     
