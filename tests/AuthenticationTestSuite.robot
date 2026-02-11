@@ -34,5 +34,5 @@ Login existing user successfully
     [Documentation]    Verify that a registered user can access their account.
     # Performing login action
     Enter User Credentials To Login   ${EXISTING_USER_CREDENTIALS}    ${CREDENTIALS_LOCATORS}    ${login_button_locator}
-    # Check if the user is redirected to the account dashboard and the mandatory welcome message defined in User Story 2.
+    # Check if the user is   redirected to the account dashboard and the mandatory welcome message defined in User Story 2.
     Verify User Is Logged In and Welcomed    ${NEW_USER_CREDENTIALS}[username]    ${welcome_message}    ${welcome_message_locator}
